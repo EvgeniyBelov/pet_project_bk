@@ -7,16 +7,16 @@ public class input_parametrs {
         Scanner SC = new Scanner(System.in);
         System.out.println("Введите первый коэффициент: ");
         Double kf1 = SC.nextDouble();
-        System.out.println("Введите сумму ставки на первый матч: ");
+        System.out.println("Введите сумму ставки на первый матч($): ");
         double sum1 = SC.nextDouble();
         System.out.println("Введите второй коэффициент: ");
         double kf2 = SC.nextDouble();
-        System.out.println("Введите сумму ставки на второй матч: ");
+        System.out.println("Введите сумму ставки на второй матч($): ");
         double sum2 = SC.nextDouble();
-        System.out.println("Коэффициент №1 сыграл? (true / false)");
-        boolean pari1 = SC.nextBoolean();
-        System.out.println("Коэффициент №2 сыграл? (true / false)");
-        boolean pari2 = SC.nextBoolean();
+        System.out.println("Коэффициент №1 сыграл? (да / нет)");
+        String pari1 = SC.next();
+        System.out.println("Коэффициент №2 сыграл? (да / нет)");
+        String pari2 = SC.next();
 
 
 
