@@ -8,7 +8,9 @@ public class calculation extends input_parametrs {
 
     private String pari1;
     private String pari2;
-    public calculation(Double kf1, double sum1, double kf2, double sum2, String pari1, String pari2) {
+
+
+    public calculation (Double kf1, Double sum1, Double kf2, Double sum2, String pari1, String pari2) {
 
         this.kf1 = kf1;
         this.kf2 = kf2;
@@ -26,25 +28,20 @@ public class calculation extends input_parametrs {
             double P1 = V1-sum1;
             System.out.println("Ваш выигрыш: " + V1 + " $");
             System.out.println("Ваша чистая прибыль: " + P1 + " $");
-        } else if (pari1.equals(result_pari_fail)) {
+        } else  {
             System.out.println("Сегодня не Ваш день :(");
-        } else {
-            System.out.println("Укажите результат пари");
-
         }
+
+
         System.out.println("Результат пари №2: ");
         if (pari2.equals(result_pari_successfully)) {
             double V2 = kf1*sum1;
             double P2 = V2-sum1;
             System.out.println("Ваш выигрыш: " + V2 + " $");
             System.out.println("Ваша чистая прибыль: " + P2 + " $");
-        } else if (pari2.equals(result_pari_fail)) {
-            System.out.println("Сегодня не Ваш день :(");
         } else {
-            System.out.println("Укажите результат пари");
-
+            System.out.println("Сегодня не Ваш день :(");
         }
     }
-
 
 }
