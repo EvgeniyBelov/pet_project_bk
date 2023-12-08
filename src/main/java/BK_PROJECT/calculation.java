@@ -29,7 +29,7 @@ public class calculation extends input_parametrs {
             System.out.println("Ваш выигрыш: " + V1 + " $");
             System.out.println("Ваша чистая прибыль: " + P1 + " $");
         } else  {
-            System.out.println("Сегодня не Ваш день :(");
+            System.out.println("Сегодня не Ваш день :( \n Убыток " + sum1 + " $");
         }
 
 
@@ -40,7 +40,7 @@ public class calculation extends input_parametrs {
             System.out.println("Ваш выигрыш: " + V2 + " $");
             System.out.println("Ваша чистая прибыль: " + P2 + " $");
         } else {
-            System.out.println("Сегодня не Ваш день :(");
+            System.out.println("Сегодня не Ваш день :( \n Убыток " + sum2 + " $");
         }
     }
 
